@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Vedansh sir</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form</h1>
+        <form id="myForm">
+            <label for="name">Full name</label><br>
+            <input type="text" id="name" name="name" class="make"><br>
+            <span id="nameError" class="error"></span><br>
+
+            <label for="phone">Phone</label><br>
+            <input type="tel" id="phone" name="phone" class="make"><br>
+            <span id="phoneError" class="error"></span><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" class="make"><br>
+            <span id="emailError" class="error"></span><br>
+
+            <div class="radio-button">
+                <h2>Orthodontic Treatment Modality</h2>
+                <label class="radiobtn">
+                    <input type="radio" name="radio" id="labial" class="radioButton" value="Labial Brace">Labial Brace
+                </label>
+
+                <label class="radiobtn">
+                    <input type="radio" name="radio" id="clear" class="radioButton" value="Clear Aligner">Clear Aligner
+                </label>
+
+                <label class="radiobtn">
+                    <input type="radio" name="radio" id="lingual" class="radioButton" value="Lingual Brace">Lingual Brace
+                </label>
+            </div>
+
+            <div class="dropdownFirst">
+                <label for="hiddenFirst" class="header">Clear Aligner Plan Sent to Manufacturer</label><br>
+                <select id="hiddenFirst" name="clearAligner" class="optionCreate">
+                    <option value="1">Clear Aligner Plan Modification 1</option>
+                    <option value="2">Clear Aligner Plan Modification 2</option>
+                    <option value="3">Clear Aligner Plan Modification 3</option>
+                    <option value="4">Clear Aligner Plan Modification 4</option>
+                </select>
+            </div>
+                
+            <div class="dropdownSecond">
+                <label for="hiddenSecond" class="header">Lingual Braces Plan Sent to Manufacturer</label><br>
+                <select id="hiddenSecond" name="lingualBraces" class="optionCreate">
+                    <option value="1">Lingual Braces Plan Modification 1</option>
+                    <option value="2">Lingual Braces Plan Modification 2</option>
+                    <option value="3">Lingual Braces Plan Modification 3</option>
+                    <option value="4">Lingual Braces Plan Modification 4</option>
+                </select>
+            </div>
+
+            <div class="OthodonticCheckbox">
+                <input type="checkbox" id="metal" name="metal">
+                <label for="metal">Orthodontic Appliance Approved</label><br>
+                <span id="checkboxError" class="error"></span><br>
+            </div>
+            <span id="modalityError" class="error"></span><br>
+
+            <button type="submit" class="sub">Submit</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
